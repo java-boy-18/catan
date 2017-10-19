@@ -1,0 +1,77 @@
+.board {
+  margin: 0 auto;
+  width:  800px;
+  height: 680px;
+}
+.materiais{
+  position: relative;
+  top:65px;
+  left:2px;
+}
+.moldura{
+  width:  750px;
+  height: 670px;
+  background-image: url('../imagens/board4.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.madeira{
+  position:relative;
+  width: 115px;
+  height: 135px;
+  background-image: url('../imagens/materiais/1.png');
+  background-repeat: no-repeat;
+  display: inline-block;
+  /*border: 1px solid black;*/
+}
+.trigo{
+  position: relative;
+  display: inline-block;
+  width: 115px;
+  height: 135px;
+  background-image: url('../imagens/materiais/2.png');
+  background-repeat: no-repeat;
+}
+.ovelha{
+  position:relative;
+  width: 115px;
+  height: 135px;
+  display: inline-block;
+  background-image: url('../imagens/materiais/3.png');
+  background-repeat: no-repeat;
+}
+.pedra{
+  position: relative;
+  display: inline-block;
+  width: 115px;
+  height: 135px;
+  background-image: url('../imagens/materiais/4.png');
+  background-repeat: no-repeat;
+}
+.tijolo{
+  position: relative;
+  display: inline-block;
+  width: 115px;
+  height: 135px;
+  background-image: url('../imagens/materiais/5.png');
+  background-repeat: no-repeat;
+}
+.deserto{
+  position: relative;
+  display: inline-block;
+  width: 115px;
+  height: 135px;
+  background-image: url('../imagens/materiais/6.png');
+  background-repeat: no-repeat;
+}
+.numeros{
+  background: radial-gradient(#F6D688, #CDB168, #D8B76A);
+  border: 1px solid black;
+  font-size: 35px;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 48px;
+  left: 38px;
+}
