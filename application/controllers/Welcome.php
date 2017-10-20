@@ -43,10 +43,10 @@ class Welcome extends CI_Controller {
 		$numero[4] = '4';
 		$numero[5] = '5';
 		$numero[6] = '5';
-		$numero[7] = '<font color="red">6</font>';
-		$numero[8] = '<font color="red">6</font>';
-		$numero[9] = '<font color="red">8</font>';
-		$numero[10] = '<font color="red">8</font>';
+		$numero[7] = '6';
+		$numero[8] = '6';
+		$numero[9] = '8';
+		$numero[10] = '8';
 		$numero[11] = '9';
 		$numero[12] = '9';
 		$numero[13] = '10';
@@ -55,11 +55,9 @@ class Welcome extends CI_Controller {
 		$numero[16] = '11';
 		$numero[17] = '12';
 		shuffle($numero);
+		$numero[18] = '7';
 		$rs['numero'] = $numero;
 		$rs['materiaPrima'] = $materiaPrima;
 		$this->load->view('welcome_message',$rs);
-	}
-	public function dice(){
-		echo rand(2,12);
 	}
 }
