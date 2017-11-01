@@ -75,3 +75,46 @@
   top: 48px;
   left: 38px;
 }
+#cartamadeira{
+  position: absolute;
+  width: 100px;
+  height: 120px;
+  background-image: url('../imagens/cartas/madeira.png');
+  background-size: 100% 100%;
+}
+#cartaovelha{
+  position: absolute;
+  top: 175px;
+  width: 100px;
+  height: 120px;
+  background-image: url('../imagens/cartas/ovelha.png');
+  background-size: 100% 100%;
+  /*background-repeat: no-repeat;*/
+}
+#cartapedra{
+  position: absolute;
+  top: 295px;
+  width: 100px;
+  height: 120px;
+  background-image: url('../imagens/cartas/pedra.png');
+  background-size: 100% 100%;
+  /*background-repeat: no-repeat;*/
+}
+#cartatijolo{
+  position: absolute;
+  top: 415px;
+  width: 100px;
+  height: 120px;
+  background-image: url('../imagens/cartas/tijolo.png');
+  background-size: 100% 100%;
+  /*background-repeat: no-repeat;*/
+}
+#cartatrigo{
+  position: absolute;
+  top: 530px;
+  width: 100px;
+  height: 120px;
+  background-image: url('../imagens/cartas/trigo.png');
+  background-size: 100% 100%;
+  /*background-repeat: no-repeat;*/
+}
