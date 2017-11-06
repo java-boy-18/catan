@@ -4,19 +4,20 @@ echo link_tag('assets/css/board.css');
 ?>
 <script type="text/javascript" src="<?php echo base_url('assets/js/jquery.js'); ?>" ></script>
 <script type="text/javascript" src="<?php echo base_url('assets/js/dice.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url('assets/js/construir.js'); ?>"></script>
 <button type="button" id="roll" name="roll">ROLL DICE !!!</button>
 <input type="text" name="resultado" readonly id="resultado" value="">
 <body onselectstart="return false">
 	<div class="cartas">
-		<input type="text" name="madeira" id="madeira" readonly value="">
+		<input type="text" name="madeira" id="inputmadeira" readonly value="0">
 		<div id="cartamadeira"></div>
-		<input type="text" name="ovelha" readonly value="">
+		<input type="text" name="ovelha" id="inputovelha" readonly value="0">
 		<div id="cartaovelha"></div>
-		<input type="text" name="pedra" readonly value="">
+		<input type="text" name="pedra" id="inputpedra" readonly value="0">
 		<div id="cartapedra"></div>
-		<input type="text" name="tijolo" readonly value="">
+		<input type="text" name="tijolo" id="inputtijolo" readonly value="0">
 		<div id="cartatijolo"></div>
-		<input type="text" name="trigo" readonly value="">
+		<input type="text" name="trigo" id="inputtrigo" readonly value="0">
 		<div id="cartatrigo"></div>
 	</div>
 	<div class="board">
@@ -153,6 +154,193 @@ echo link_tag('assets/css/board.css');
 					</div>
 
 				</div>
+			</div>
+			<div>
+				<a href="#">
+					<div class="settlement" onclick="construir(1)" style="top:90px;left: 588px;">1</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:90px;left: 701px;">2</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:90px;left: 813px;">3</div>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<div class="settlement" onclick="construir(4)" style="top:120px;left: 535px;">4</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:120px;left: 646px;">5</div>
+				</a>
+				<a href="#">
+					<div class="settlement"style="top:120px;left: 760px;">6</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:120px;left: 870px;">7</div>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<div class="settlement" style="top:190px;left: 535px;">8</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:190px;left: 646px;">9</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:190px;left: 760px;">10</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:190px;left: 870px;">11</div>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<div class="settlement" style="top:222px;left: 475px;">12</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:222px;left: 588px;">13</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:222px;left: 701px;">14</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:222px;left: 813px;">15</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:222px;left: 925px;">16</div>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<div class="settlement" style="top:291px;left: 475px;">17</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:291px;left: 588px;">18</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:291px;left: 701px;">19</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:291px;left: 813px;">20</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:291px;left: 925px;">21</div>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<div class="settlement" style="top:325px;left: 420px;">22</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:325px;left: 535px;">23</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:325px;left: 646px;">24</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:325px;left: 760px;">25</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:325px;left: 870px;">26</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:325px;left: 985px;">27</div>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<div class="settlement" style="top:390px;left: 420px;">28</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:390px;left: 535px;">29</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:390px;left: 646px;">30</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:390px;left: 760px;">31</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:390px;left: 870px;">32</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:390px;left: 985px;">33</div>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<div class="settlement" style="top:420px;left: 475px;">34</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:420px;left: 588px;">35</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:420px;left: 701px;">36</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:420px;left: 813px;">37</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:420px;left: 925px;">38</div>
+				</a>
+			</div>
+
+			<div>
+				<a href="#">
+					<div class="settlement" style="top:490px;left: 475px;">39</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:490px;left: 588px;">40</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:490px;left: 701px;">41</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:490px;left: 813px;">42</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:490px;left: 925px;">43</div>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<div class="settlement" style="top:520px;left: 535px;">44</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:520px;left: 646px;">45</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:520px;left: 760px;">46</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:520px;left: 870px;">47</div>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<div class="settlement" style="top:588px;left: 535px;">48</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:588px;left: 646px;">49</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:588px;left: 760px;">50</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:588px;left: 870px;">51</div>
+				</a>
+			</div>
+			<div>
+				<a href="#">
+					<div class="settlement" style="top:620px;left: 588px;">52</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:620px;left: 701px;">53</div>
+				</a>
+				<a href="#">
+					<div class="settlement" style="top:620px;left: 813px;">54</div>
+				</a>
 			</div>
 		</center>
 	</div>

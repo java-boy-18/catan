@@ -13,6 +13,7 @@ $(document).ready(function () {
         $(div).css( "color", "red" );
       }else{
         $(div).css( "color", "black" );
+        // $(div).css( "pointer-events", "none" );
       }
     });
   });
@@ -20,12 +21,15 @@ $(document).ready(function () {
     dado = parseInt($('#resultado').val());
     var valor = parseInt($( this ).text());
     if(dado == valor){
-      alert('esse e o teu numero');
+      // alert('esse e o teu numero');
       $("input[type=hidden]").each(function(index, valor) {
         var numero = valor.value.split('/');
         var div = '.'+numero[0];
+        var materiaPrima = "input[name="+numero[1]+"]";
+        var carta = $(materiaPrima).val();
         if(dado == numero[0]){
-          alert('ganhou um(a) '+numero[1]);
+          carta++;
+          $(materiaPrima).val(carta++);
         }
       });
     }else{
