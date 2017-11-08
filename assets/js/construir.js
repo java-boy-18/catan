@@ -1,7 +1,13 @@
-function construir(selecionado){
-  var direita = selecionado + 4;
-  var esquerda = selecionado + 3;
-  alert('direita: '+direita+'\n'+'selecionado: '+selecionado+'\n'+'esquerda: '+esquerda+'\n');
+function construir(esquerda,selecionado,direita,cima =null){
+    var DivEsquerda = '#'+esquerda;
+    var DivSelecionado = '#'+selecionado;
+    var DivDireita = '#'+direita;
+    var DivCima = '#'+cima;
+    if($(DivEsquerda).hasClass('addsettlement')||$(DivSelecionado).hasClass('addsettlement')||$(DivDireita).hasClass('addsettlement')||$(DivCima).hasClass('addsettlement')){
+        alert('nao pode construir aqui');
+    }else{
+        $(DivSelecionado).addClass('addsettlement');
+    }
 }
 $(document).ready(function () {
 });
