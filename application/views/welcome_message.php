@@ -35,14 +35,18 @@ echo link_tag('assets/css/board.css');
 						</div>
 						<div class="<?php echo $materiaPrima[1];?>" style="right:2px;top:2.5px;">
 							<div id="<?php echo $numero[1]?>" class="numeros <?php echo $numero[1]?>">
-								<input type="hidden" value="<?php echo $numero[1].'/'.$materiaPrima[1] ?>">
-								<?php echo $numero[1] ?>
+								<a href="#">
+									<input type="hidden" value="<?php echo $numero[1].'/'.$materiaPrima[1] ?>">
+									<?php echo $numero[1] ?>
+								</a>
 							</div>
 						</div>
 						<div class="<?php echo $materiaPrima[2];?>" style="right:7px;top:4px;">
 							<div id="<?php echo $numero[2]?>" class="numeros <?php echo $numero[2]?>">
-								<input type="hidden" value="<?php echo $numero[2].'/'.$materiaPrima[2] ?>">
-								<?php echo $numero[2] ?>
+								<a href="#">
+									<input type="hidden" value="<?php echo $numero[2].'/'.$materiaPrima[2] ?>">
+									<?php echo $numero[2] ?>
+								</a>
 							</div>
 						</div><br>
 					</div>
@@ -50,26 +54,34 @@ echo link_tag('assets/css/board.css');
 					<div id="dois">
 						<div class="<?php echo $materiaPrima[3];?>" style="bottom:36px;left:6px;">
 							<div id="<?php echo $numero[3]?>" class="numeros <?php echo $numero[3]?>">
-								<input type="hidden" value="<?php echo $numero[3].'/'.$materiaPrima[3] ?>">
-								<?php echo $numero[3] ?>
+								<a href="#">
+									<input type="hidden" value="<?php echo $numero[3].'/'.$materiaPrima[3] ?>">
+									<?php echo $numero[3] ?>
+								</a>
 							</div>
 						</div>
 						<div class="<?php echo $materiaPrima[4];?>" style="bottom:36px;">
 							<div id="<?php echo $numero[4]?>" class="numeros <?php echo $numero[4]?>">
-								<input type="hidden" value="<?php echo $numero[4].'/'.$materiaPrima[4] ?>">
-								<?php echo $numero[4] ?>
+								<a href="#">
+									<input type="hidden" value="<?php echo $numero[4].'/'.$materiaPrima[4] ?>">
+									<?php echo $numero[4] ?>
+								</a>
 							</div>
 						</div>
 						<div class="<?php echo $materiaPrima[5];?>" style="bottom:36px;right:5px;">
 							<div id="<?php echo $numero[5]?>" class="numeros <?php echo $numero[5]?>">
-								<input type="hidden" value="<?php echo $numero[5].'/'.$materiaPrima[5] ?>">
-								<?php echo $numero[5] ?>
+								<a href="#">
+									<input type="hidden" value="<?php echo $numero[5].'/'.$materiaPrima[5] ?>">
+									<?php echo $numero[5] ?>
+								</a>
 							</div>
 						</div>
 						<div class="<?php echo $materiaPrima[6];?>" style="bottom:36px;right:11px;">
 							<div id="<?php echo $numero[6]?>" class="numeros <?php echo $numero[6]?>">
-								<input type="hidden" value="<?php echo $numero[6].'/'.$materiaPrima[6] ?>">
-								<?php echo $numero[6] ?>
+								<a href="#">
+									<input type="hidden" value="<?php echo $numero[6].'/'.$materiaPrima[6] ?>">
+									<?php echo $numero[6] ?>
+								</a>
 							</div>
 						</div><br>
 					</div>
@@ -77,32 +89,42 @@ echo link_tag('assets/css/board.css');
 					<div id="tres">
 						<div class="<?php echo $materiaPrima[7];?>" style="bottom:75px;left:11px;">
 							<div id="<?php echo $numero[7]?>" class="numeros <?php echo $numero[7]?>">
-								<input type="hidden" value="<?php echo $numero[7].'/'.$materiaPrima[7] ?>">
-								<?php echo $numero[7] ?>
+								<a href="#">
+									<input type="hidden" value="<?php echo $numero[7].'/'.$materiaPrima[7] ?>">
+									<?php echo $numero[7] ?>
+								</a>
 							</div>
 						</div>
 						<div class="<?php echo $materiaPrima[8];?>" style="bottom:75px;left:5px;">
 							<div id="<?php echo $numero[8]?>" class="numeros <?php echo $numero[8]?>">
-								<input type="hidden" value="<?php echo $numero[8].'/'.$materiaPrima[8] ?>">
-								<?php echo $numero[8] ?>
+								<a href="#">
+									<input type="hidden" value="<?php echo $numero[8].'/'.$materiaPrima[8] ?>">
+									<?php echo $numero[8] ?>
+								</a>
 							</div>
 						</div>
 						<div class="deserto" style="bottom:75px;right:1px;">
 							<div class="numeros 7">
-								<input type="hidden" value="<?php echo $numero[18].'/'.'deserto' ?>">
-								7
+								<a href="#">
+									<input type="hidden" value="<?php echo $numero[18].'/'.'deserto' ?>">
+									7
+								</a>
 							</div>
 						</div>
 						<div class="<?php echo $materiaPrima[9]?>" style="bottom:75px;right:7px;">
 							<div id="<?php echo $numero[9]?>" class="numeros <?php echo $numero[9]?>">
-								<input type="hidden" value="<?php echo $numero[9].'/'.$materiaPrima[9] ?>">
-								<?php echo $numero[9] ?>
+								<a href="#">
+									<input type="hidden" value="<?php echo $numero[9].'/'.$materiaPrima[9] ?>">
+									<?php echo $numero[9] ?>
+								</a>
 							</div>
 						</div>
 						<div class="<?php echo $materiaPrima[10]?>" style="bottom:75px;right:13px;">
 							<div id="<?php echo $numero[10]?>" class="numeros <?php echo $numero[10]?>">
-								<input type="hidden" value="<?php echo $numero[10].'/'.$materiaPrima[10] ?>">
-								<?php echo $numero[10] ?>
+								<a href="#">
+									<input type="hidden" value="<?php echo $numero[10].'/'.$materiaPrima[10] ?>">
+									<?php echo $numero[10] ?>
+								</a>
 							</div>
 						</div><br>
 					</div>
@@ -110,26 +132,34 @@ echo link_tag('assets/css/board.css');
 					<div id="quatro">
 						<div class="<?php echo $materiaPrima[11]?>" style="bottom:115px;left:9px;">
 							<div id="<?php echo $numero[11]?>" class="numeros <?php echo $numero[11]?>">
-								<input type="hidden" value="<?php echo $numero[11].'/'.$materiaPrima[11] ?>">
-								<?php echo $numero[11] ?>
+								<a href="#">
+									<input type="hidden" value="<?php echo $numero[11].'/'.$materiaPrima[11] ?>">
+									<?php echo $numero[11] ?>
+								</a>
 							</div>
 						</div>
 						<div class="<?php echo $materiaPrima[12]?>" style="bottom:115px;left:2px;">
 							<div id="<?php echo $numero[12]?>" class="numeros <?php echo $numero[12]?>">
-								<input type="hidden" value="<?php echo $numero[12].'/'.$materiaPrima[12] ?>">
-								<?php echo $numero[12] ?>
+								<a href="#">
+									<input type="hidden" value="<?php echo $numero[12].'/'.$materiaPrima[12] ?>">
+									<?php echo $numero[12] ?>
+								</a>
 							</div>
 						</div>
 						<div class="<?php echo $materiaPrima[13]?>" style="bottom:115px;right:4px;">
 							<div id="<?php echo $numero[13]?>" class="numeros <?php echo $numero[13]?>">
-								<input type="hidden" value="<?php echo $numero[13].'/'.$materiaPrima[13] ?>">
-								<?php echo $numero[13] ?>
+								<a href="#">
+									<input type="hidden" value="<?php echo $numero[13].'/'.$materiaPrima[13] ?>">
+									<?php echo $numero[13] ?>
+								</a>
 							</div>
 						</div>
 						<div class="<?php echo $materiaPrima[14]?>" style="bottom:115px;right:10px;">
 							<div id="<?php echo $numero[14]?>" class="numeros <?php echo $numero[14]?>">
-								<input type="hidden" value="<?php echo $numero[14].'/'.$materiaPrima[14] ?>">
-								<?php echo $numero[14] ?>
+								<a href="#">
+									<input type="hidden" value="<?php echo $numero[14].'/'.$materiaPrima[14] ?>">
+									<?php echo $numero[14] ?>
+								</a>
 							</div>
 						</div><br>
 					</div>
@@ -137,20 +167,26 @@ echo link_tag('assets/css/board.css');
 					<div id="cinco">
 						<div class="<?php echo $materiaPrima[15]?>" style="bottom:155px;left:5.4">
 							<div id="<?php echo $numero[15]?>" class="numeros <?php echo $numero[15]?>">
-								<input type="hidden" value="<?php echo $numero[15].'/'.$materiaPrima[15] ?>">
-								<?php echo $numero[15] ?>
+								<a href="#">
+									<input type="hidden" value="<?php echo $numero[15].'/'.$materiaPrima[15] ?>">
+									<?php echo $numero[15] ?>
+								</a>
 							</div>
 						</div>
 						<div class="<?php echo $materiaPrima[16]?>" style="bottom:155px;">
 							<div id="<?php echo $numero[16]?>" class="numeros <?php echo $numero[16]?>">
-								<input type="hidden" value="<?php echo $numero[16].'/'.$materiaPrima[16] ?>">
-								<?php echo $numero[16] ?>
+								<a href="#">
+									<input type="hidden" value="<?php echo $numero[16].'/'.$materiaPrima[16] ?>">
+									<?php echo $numero[16] ?>
+								</a>
 							</div>
 						</div>
 						<div class="<?php echo $materiaPrima[17]?>" style="bottom:155px;right:5.4">
 							<div id="<?php echo $numero[17]?>" class="numeros <?php echo $numero[17]?>">
-								<input type="hidden" value="<?php echo $numero[17].'/'.$materiaPrima[17] ?>">
-								<?php echo $numero[17] ?>
+								<a href="#">
+									<input type="hidden" value="<?php echo $numero[17].'/'.$materiaPrima[17] ?>">
+									<?php echo $numero[17] ?>
+								</a>
 							</div>
 						</div><br>
 					</div>
